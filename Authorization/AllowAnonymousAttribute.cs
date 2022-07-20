@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace ExampleCRUD.Authorization
 {
-    public class AllowAnonymousAttribute
-    {
+    [AttributeUsage(AttributeTargets.Method)]
+    public class AllowAnonymousAttribute : Attribute
+    { 
         
     }
 }
